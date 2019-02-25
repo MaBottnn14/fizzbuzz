@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: mabottnn14
+Credit: Andrew
 
 Assignment:
 
@@ -44,3 +44,16 @@ Fizz
 Fizz
 Buzz
 """
+m = int(input("How many numbers shall we print? "))
+b = int(input("For multiples of what number shall we print 'Fizz'? "))
+k = int(input("For multiples of what number shall we print 'Buzz'? "))
+
+for t in range (1, m + 1):
+    if t % b == 0:
+        print( "Fizz" )
+    elif t % k == 0:
+        print( "Buzz" )
+    elif t % b == 0 and t % k == 0:
+        print( "FizzBuzz" )
+    else:
+        print(t)
